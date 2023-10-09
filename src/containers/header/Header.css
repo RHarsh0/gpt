@@ -1,6 +1,6 @@
 .gpt__header{
     display: flex;
-    width: max-content;
+    margin-bottom: 78px;
 }
 .gpt__header-content{
     flex: 1;
@@ -8,6 +8,7 @@
     justify-content:center ;
     align-items: flex-start;
     flex-direction: column;
+    margin: 2rem 6rem;
 
     margin-right: 5rem;
 }
@@ -23,8 +24,8 @@
 
 .gpt__header-content p{
     font-family: var(--font-family);
-    width: 554px;
-    height: 227px;
+    /* width: 554px;
+    height: 227px; */
     flex-shrink: 0;
     color: var(--color-text);
     font-size: 20px;
@@ -40,6 +41,9 @@
     height: 50px;
     font-family: var(--font-family);
     flex-shrink: 0;
+    font-weight: 400;
+    font-size: 20;
+    line-height: 28px;
 }
 .gpt__header-content__input input{
     flex: 2;
@@ -56,7 +60,7 @@
     background: #FF4820;
     outline: 0;
     color: #fff;
-    font-weight: bold;
+    
     padding: 0 1rem;
     cursor: pointer;
     border: none;
@@ -77,8 +81,6 @@
     height: 38px;
 }
 .gpt__header-content__people p{
-    width: 581.921px;
-height: 37.611px;
 flex-shrink: 0;
 margin-left: 1rem;
     color: #FFF;
@@ -103,6 +105,44 @@ line-height: 37.611px; /* 313.423% */
         flex-direction: column;
     }
     .gpt__header-content{
-        margin:0 0 3rem;
+        /* margin:0 0 3rem; */
+        margin: 2rem 6rem;
+    }
+}
+@media screen and (max-width:650px) {
+    .gpt__header h1{
+        font-size: 48px;
+        line-height: 60px;
+    }
+    .gpt__header-content{
+        margin: 0rem 2rem;
+    }
+    .gpt__header p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .gpt__header-content__people{
+        flex-direction: column;
+    }
+    gpt__header-content__people p{
+        margin: 0;
+    }
+    .gpt__header-content__input input,button{
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+@media screen and (max-width:490px) {
+    .gpt__header h1{
+        font-size: 36px;
+        line-height: 48px;
+    }
+    .gpt__header p{
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .gpt__header-content__input input,button{
+        font-size: 12px;
+        line-height: 16px;
     }
 }

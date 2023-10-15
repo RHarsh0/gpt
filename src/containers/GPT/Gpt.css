@@ -1,3 +1,6 @@
+.section__margin{
+    margin: 126px 135px 126px 135px ;
+}
 .gpt__GPT {
     display: flex;
     flex-direction: column;
@@ -25,10 +28,10 @@
 .gpt__GPT-features{
     display: flex;
 }
-.gpt__GPT-features .gpt__features-container__features{
+.gpt__GPT-features .gpt__features-container__feature{
     margin: 0;
 }
-.gpt__GPT-features .gpt__features-container__features{
+.gpt__GPT-features .gpt__features-container__feature-text{
     max-width: 700px;
 }
 .gpt__GPT-heading{
@@ -54,12 +57,12 @@ line-height: 45px;
     cursor: pointer;
 }
 .gpt__GPT-container{
-    display: flex;
-    flex-wrap: wrap;
-
+    display: grid;
+    grid-template-columns: 31% 31% 31%;
+    column-gap: 10px;
     margin-top: 2rem;
 }
-.gpt3__GPT-container .gpt__features-container__features {
+.gpt__GPT-container .gpt__features-container__feature {
     flex: 1;
     margin: 1rem;
     min-width: 210px;
@@ -68,7 +71,7 @@ line-height: 45px;
 }
 
 /* Customizing feature component as per needs */
-.gpt__GPT-container .gpt__features-container_features-text {
+.gpt__GPT-container .gpt__features-container_feature-text {
     margin-top: 0.5rem;
 }
 
@@ -82,16 +85,25 @@ line-height: 45px;
     .gpt__GPT-heading p {
         margin-top: 1rem;
     }
+    
 }
 
+@media screen and (max-width:960px) {
+    .gpt__GPT-container{
+        grid-template-columns: 50% 50%;
+    }
+    .section__margin{
+        margin: 126px 90px 126px 90px ;
+    }
+}
 @media screen and (max-width: 650px) {
     /* Customizing feature component as per needs */
-    .gpt__GPT-features .gpt__features-container__features {
+    .gpt__GPT-features .gpt__features-container__feature {
         flex-direction: column;
     }
 
     /* Customizing feature component as per needs */
-    .gpt__GPT-feature .gpt__features-container_features-text {
+    .gpt__GPT-feature .gpt__features-container_feature-text {
         margin-top: 0.5rem;
     }
 
@@ -99,12 +111,15 @@ line-height: 45px;
         font-size: 28px;
         line-height: 40px;
     }
+    .gpt__GPT-container{
+        grid-template-columns: 100%;
+    }
 }
 
 @media screen and (max-width: 350px) {
     /* Customizing feature component as per needs */
-    .gpt__GPT-container .gpt__features-container__features {
+    .gpt__GPT-container .gpt__features-container__feature {
         margin: 1rem 0;
         min-width: 100%;
-    }
+    }  
 }

@@ -1,6 +1,4 @@
-.section__margin{
-    margin: 126px 135px 126px 135px ;
-}
+
 .gpt__GPT {
     display: flex;
     flex-direction: column;
@@ -91,9 +89,6 @@ line-height: 45px;
 @media screen and (max-width:960px) {
     .gpt__GPT-container{
         grid-template-columns: 50% 50%;
-    }
-    .section__margin{
-        margin: 126px 90px 126px 90px ;
     }
 }
 @media screen and (max-width: 650px) {

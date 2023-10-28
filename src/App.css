@@ -17,10 +17,10 @@ body{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.section_padding{
+.section__padding{
     padding: 4rem 6rem;
 }
-.section_margin{
+.section__margin{
     margin: 4rem 6rem;
 }
 .scale-up-center {
@@ -49,18 +49,18 @@ body{
   }
 
   @media screen and (max-width:700px) {
-    .section_padding{
+    .section__padding{
         padding: 4rem ;
     }
-    .section_margin{
+    .section__margin{
         margin: 4rem ;
     }
   }
   @media screen and (max-width:500px) {
-    .section_padding{
+    .section__padding{
         padding: 2rem ;
     }
-    .section_margin{
+    .section__margin{
         margin: 2rem ;
     }
   }

@@ -1,0 +1,128 @@
+.gpt__footer{
+    display: flex;
+    /* color: white; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-footer);
+}
+.gpt__footer-heading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.gpt__footer-heading h1{
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: 62px;
+    font-weight: 800;
+    line-height: 75px; /* 120.968% */
+    letter-spacing: -2.48px;
+}
+.gpt__footer-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #ffffff;
+    text-align: center;
+    margin-bottom: 10rem;
+    cursor: pointer;
+}
+.gpt__footer-btn p{
+    box-sizing: border-box;
+    color: #FFF;
+    font-family: var(--font-family);
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    word-spacing: 2px;
+}
+.gpt__footer-links{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    text-align: left;
+}
+.gpt__footer-links div{
+    width: 250px;
+    margin: 1rem;
+}
+
+.gpt__footer-links_logo{
+    display: flex;
+    flex-direction: column;
+}
+.gpt__footer-links_logo img{
+    width: 118px;
+    height: 30px;
+    margin-bottom: 1rem;
+}
+.gpt__footer-links_logo p{
+    font-family: var(--font-family);
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFF;
+}
+
+.gpt__footer-links_div{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.gpt__footer-links_div h4{
+    color: #FFF;
+font-family: var(--font-family);
+font-size: 14px;
+line-height: 16px;
+margin-bottom: 1rem;
+}
+.gpt__footer-links_div p{
+    font-family: var(--font-family);
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFF;
+    margin: 0.5rem 0;
+    cursor: pointer;
+}
+
+.gpt__footer-copyright{
+    margin-top: 2rem;
+    text-align: center;
+    width: 100%;
+}
+.gpt__footer-copyright p{
+    color: #FFF;
+font-family: var(--font-family);
+font-size: 12px;
+font-weight: 400;
+}
+
+@media screen and (max-width:850px) {
+    .gpt__footer-heading h1{
+        font-size: 44px;
+        line-height: 50px;
+    }
+}
+@media screen and (max-width:550px) {
+    .gpt__footer-heading h1{
+        font-size: 34px;
+        line-height: 42px;
+    }
+    .gpt__footer-links div{
+        margin: 1rem 0;
+    }
+    .gpt__footer-btn p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+@media screen and (max-width:550px) {
+    .gpt__footer-heading h1{
+        font-size: 27px;
+        line-height: 38px;
+    }
+}
